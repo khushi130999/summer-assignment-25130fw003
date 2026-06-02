@@ -1,0 +1,96 @@
+5.write a program to find the sum of digit of a number .
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int n,sum=0,r;
+    cout<< "enter number";
+    cin>>n;
+    
+    while (n>0){
+      r=n%10;
+      sum+=r;
+      n=n/10;
+    }
+    cout<< sum<< endl;
+    return 0;
+}
+
+6. write a program to reverse a number .
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int n,rev=0,r;
+    cout<< "enter number";
+    cin>>n;
+    
+    while (n>0){
+      r=n%10;
+      rev= rev*10 + r;
+      n=n/10;
+    }
+    cout<< rev << endl;
+    return 0;
+}
+
+7. write a program to find product of the digits..
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int n,pro=1,r;
+    cout<< "enter number";
+    cin>>n;
+    
+    while (n>0){
+      r=n%10;
+      pro= pro*r;
+      n=n/10;
+    }
+    cout<< pro << endl;
+    return 0;
+}
+
+8. write a program to check a number is palindrome.
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int n, r ,rev=0,n1;
+  
+    cout<< "enter number";
+    
+    cin>>n;
+    n1=n;
+    
+    while (n!=0){
+      r=n%10;
+      rev=rev*10+ r;
+      n=n/10;
+    }
+  
+  if (n1==rev){
+    cout<<" number is palindrome";
+  }
+  else {
+    cout<<" number is not palindrome";
+  }
+    return 0;
+}
+
+
+
+
+
+
+
+
