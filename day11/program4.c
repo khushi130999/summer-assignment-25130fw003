@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+ int factorial(int N) {
+    int fact = 1, i;
+    for (i = 1; i <= N; i++) {
+        fact *= i;
+    }
+
+    return fact;
+}
+
+int main() {
+    int N = 7;
+    int fact = factorial(N);
+    printf("Factorial of %d is %d", N, fact);
+    return 0;
+}
